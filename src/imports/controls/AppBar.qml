@@ -124,7 +124,7 @@ ToolBar {
             verticalCenter: actionsRow.verticalCenter
             left: parent.left
             right: actionsRow.left
-            leftMargin: 16 + (leftButton.showing ? Device.gridUnit - leftButton.margin : 0)
+            leftMargin: 24 + (leftButton.showing ? Device.gridUnit - leftButton.margin : 0)
             rightMargin: 16
         }
 

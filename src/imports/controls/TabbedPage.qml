@@ -58,7 +58,7 @@ FluidControls.Page {
             anchors {
                 top: centered ? undefined : parent.top
                 left: centered ? undefined : parent.left
-                leftMargin: centered ? 0 : appBar ? appBar.leftKeyline - 12 : 0
+                leftMargin: centered ? 0 : appBar ? appBar.leftKeyline - 24 : 0
                 horizontalCenter: centered ? parent.horizontalCenter : undefined
             }
 
@@ -74,6 +74,11 @@ FluidControls.Page {
                                                          (tabCloseButton.visible ? tabCloseButton.width : 0) +
                                                          leftPadding + rightPadding)
                     width: parent.fixed ? parent.width / parent.count : implicitWidth
+
+                    leftPadding: 24
+                    rightPadding: 24
+
+                    baselineOffset: 20
 
                     // Active color
                     Material.accent: appBar.Material.foreground
